@@ -1,7 +1,7 @@
 package inttriple
 
 import (
-	"de.budde/aspects/intpair"
+	"de.budde/embedding/intpair"
 )
 
 type Triple struct {

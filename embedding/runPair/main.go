@@ -1,8 +1,8 @@
 package main
 
 import (
-	"de.budde/aspects/intpair"
-	"de.budde/aspects/inttriple"
+	"de.budde/embedding/intpair"
+	"de.budde/embedding/inttriple"
 	"fmt"
 )
 

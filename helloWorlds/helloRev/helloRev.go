@@ -1,7 +1,7 @@
 package main
 
 import (
-	"de.budde/stringutil"
+	"de.budde/helloWorlds/stringutil"
 	"fmt"
 )
 
