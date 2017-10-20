@@ -7,7 +7,8 @@ import (
 
 func main() {
 	// Initialize two big ints with the first two numbers in the sequence.
-	a := big.NewInt(0)
+	ai := int64(0)
+	a := big.NewInt(ai)
 	b := big.NewInt(1)
 
 	// Initialize limit as 10^199, the smallest integer with 200 digits.
