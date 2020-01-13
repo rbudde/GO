@@ -4,9 +4,11 @@ import (
 	"fmt"
 	"strconv"
 	"time"
+	"math/rand"
 )
 
 func main() {
+    rand.Seed(42)
 	ch := make(chan int, 10)
 	go reader(ch)
 	go writer(ch)
@@ -27,7 +29,7 @@ func reader (in chan int) {
 func writer (out chan int) {
 	x := 1
 	for i := 1; i < 80; i++ {
-		// time.Sleep(time.Second * 2)
+		time.Sleep(time.Millisecond * time.Duration(rand.Int31n(3000)))
 		x++
 		out <- x
 	}
